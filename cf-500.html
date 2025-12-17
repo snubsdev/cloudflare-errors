@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temporarily Unavailable</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-
-  <body
-    class="antialiased-subpixel bg-gray-100 bg-gradient-to-br from-gray-200 to-gray-100 text-gray-700
-           dark:bg-gray-900 dark:from-gray-800 dark:to-gray-900 dark:text-gray-300
-           min-h-screen flex items-center justify-center py-10"
-  >
-    <div
-      class="w-full max-w-md mx-auto p-6 sm:p-8 md:p-10 bg-white rounded-lg shadow-xl
-             dark:bg-gray-800 dark:shadow-2xl text-center"
-    >
-      <h1 class="font-extrabold text-4xl mb-4 text-gray-900 dark:text-white">
-        We'll be right back.
-      </h1>
-      <p class="text-lg leading-relaxed mb-6">
-        Our servers are currently getting a tune-up and will be back up soon.
-        We're sorry for the inconvenience!
-      </p>
-
-      <!-- Support Ticket (still hidden, but improved styling if shown) -->
-      <p class="hidden mt-8">
-        If the issue persists, please
-        <a
-          class="inline-block px-6 py-3 mt-2 font-semibold text-white bg-blue-600 rounded-md
-                 hover:bg-blue-700 transition duration-200 ease-in-out
-                 dark:bg-blue-500 dark:hover:bg-blue-600"
-          href="mailto:support@snubs.dev?subject=Internal Error | Ray ID:::RAY_ID::&body=Describe what you were doing when you noticed this error..."
-        >
-          open a support ticket
-        </a>
-        .
-      </p>
-
-      <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-        <p class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
-          Technical Details
-        </p>
-        <div class="space-y-1 text-sm text-gray-600 dark:text-gray-400">
-          <div>
-            <span>
-              ::CLOUDFLARE_ERROR_500S_BOX::
-            </span>
-          </div>
-          <div>
-            <p>
-              Ray ID: ::RAY_ID::
-            </p>
-            <p>
-              Client IP: ::CLIENT_IP::
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>500 Internal Server Error</title>
+<link rel="stylesheet" href="https://fonts.semaphoreapi.com/css2?family=New+Transport:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900">
+<style>
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'New Transport', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    text-align: center;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+.error-message {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.details {
+    font-size: 0.9em;
+    color: #cccccc;
+    text-align: left;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+}
+.details p {
+    margin: 5px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>500</h1>
+<p class="error-message">Internal Server Error</p>
+<p>Sorry, there was an internal server error. Please try again later.</p>
+::CLOUDFLARE_ERROR_500S_BOX::
+<div class="details">
+<p><strong>Client IP:</strong> ::CLIENT_IP::</p>
+<p><strong>Ray ID:</strong> ::RAY_ID::</p>
+<p><strong>Geo:</strong> ::GEO::</p>
+</div>
+</div>
+</body>
 </html>
